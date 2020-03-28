@@ -1,0 +1,91 @@
+.footer{
+    background: var(--main-white);
+}
+.fot-top ul li a{
+    color: var(--main-green);
+    font-size: 1.3rem;
+    text-transform: capitalize;
+}
+.fot-top  a:hover{
+    color: #079354;
+}
+.fot-top p{
+    font-size: 1.3rem;
+    letter-spacing: .1rem;
+    color: var(--main-gray);
+    margin-bottom: 2rem;
+}
+.fot-top p a{
+    color: var(--main-green);
+}
+.mail-footer{
+    width: 100%;
+    padding: .7rem 1.5rem;
+    border-radius: 2rem;
+    border: 1px solid var(--main-gray);
+    font-size: 1.4rem;
+    color: var(--main-gray);
+    display: flex;
+    justify-content: space-between;
+}
+.mail-footer input{
+    outline: none;
+    border: none;
+    font-size: 1.4rem;
+    color: var(--main-gray);
+}
+.mail-footer button{
+    border: none;
+    color: var(--main-gray);
+    background: transparent;
+}
+.socials{
+    margin: 3rem 0;
+}
+.socials i{
+    /* padding: 1.5rem; */
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    background: transparent;
+    border-radius: 50%;
+    border: 1px solid var(--main-gray);
+    margin-right: 2rem;
+    font-size: 1.4rem;
+    transition: 500ms all;
+    color: var(--main-gray);
+    cursor: pointer;
+}
+.socials i:hover{
+    color: var(--main-white);
+}
+.socials .fa-twitter:hover {
+    background: #00abdc;
+}
+.socials .fa-facebook-f:hover {
+    background: #325c94;
+}
+.socials .fa-google:hover {
+    background:#d9031f;
+}
+.fot-bot{
+    background: var(--main-bg-gray);
+    padding: 2rem 0;
+}
+.fot-bot .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copyright{
+    font-size: 1.4rem;
+    color: var(--main-gray);
+}
+.copyright span{
+    color: var(--main-green);
+}
+.icon_payment i{
+    font-size: 3.5rem;
+    margin-right: 1rem;
+}
