@@ -1,0 +1,114 @@
+.heading{
+    font-size: 2.2rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+.product{
+    background: var(--main-white);
+    padding: .7rem;
+    border: 5px solid #fff;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 2px rgba(11, 25, 28, 0.1);
+    position: relative;
+    margin-bottom: 3rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0 10px;
+}
+.product_img{
+    max-width: 200px;
+    max-height: 200px;
+    margin:0  auto;
+    overflow: hidden;  
+}
+.product_img img{
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    transition: 650ms all;
+}
+ .product_name{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: var(--main-green);
+    font-weight: bold;
+    margin: 1rem 0;
+}
+.product_name:hover{
+    color: #079354;
+}
+.price{
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+.price .money_compare{
+    text-decoration: line-through;
+    color: var(--main-gray);
+    margin-left: 1rem;
+}
+.tag{
+    position: absolute;
+    top: 0;
+    right: 0rem;
+    padding: .7rem 1.3rem;
+    border-radius: 5px;
+    background: var(--main-green);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: var(--main-white);
+}
+.product .btn-quickview{
+    padding: 1rem 2rem;
+    background: var(--main-green);
+    color: var(--main-white);
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    border-radius: 2rem;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 400ms;
+    opacity: 0;
+    visibility: hidden;
+}
+.btn-quickview:hover{
+    color: var(--main-white);
+}
+.product:hover .btn-quickview{
+    top: 40%;
+    opacity: 1;
+    visibility: visible;
+}
+.product:hover .product_img img{
+    transform: scale(1.2);
+}
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: -20%;
+  transform: translateY(-50%);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 5px;
+  background: var(--main-green)!important;
+  font-size: 1.6rem!important;
+  color: var(--main-white) !important;
+  box-shadow: 0 1px #fff, inset 0 1px #c9cbcb;
+  outline: none !important;
+  cursor: pointer;
+}
+.owl-prev {
+  right: 6rem;
+  margin-right:1rem !important;
+}
+.owl-next {
+  right: 2rem;
+}

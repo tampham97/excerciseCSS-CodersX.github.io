@@ -6,9 +6,12 @@
     <title>My Website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
     <link rel="stylesheet" href="./common.css">
     <link rel="stylesheet" href="./nav.css">
     <link rel="stylesheet" href="./slideShow.css">
+    <link rel="stylesheet" href="./productSlider.css">
 </head>
 <body>
     <header>
@@ -91,17 +94,130 @@
             </ul>
         </div>
     </section>
-
-
-
-
-
+    <section class="productSlider pad">
+        <div class="container">
+            <h2 class="heading">top recommentded</h2>
+            <div class="owl-carousel owl-theme">
+                <div class="product item">
+                    <div class="product_img">
+                        <img src="images/product1.png" alt="">
+                    </div>
+                    <div class="product_desc">
+                        <div class="product_name">Iphone 7 plus</div>
+                        <div class="price">
+                            <strong class="money">$ 79.99</strong>
+                            <span class="money_compare">$ 99.99</span>
+                        </div>
+                    </div>
+                    <div class="tag">sale</div>
+                    <button class="btn btn-quickview">quick view</button>
+                </div>
+                <div class="product item">
+                    <div class="product_img">
+                        <img src="images/product1.png" alt="">
+                    </div>
+                    <div class="product_desc">
+                        <div class="product_name">Iphone 7 plus</div>
+                        <div class="price">
+                            <strong class="money">$ 79.99</strong>
+                            <span class="money_compare">$ 99.99</span>
+                        </div>
+                    </div>
+                    <div class="tag">sale</div>
+                    <button class="btn btn-quickview">quick view</button>
+                </div>
+                <div class="product item">
+                    <div class="product_img">
+                        <img src="images/product1.png" alt="">
+                    </div>
+                    <div class="product_desc">
+                        <div class="product_name">Iphone 7 plus</div>
+                        <div class="price">
+                            <strong class="money">$ 79.99</strong>
+                            <span class="money_compare">$ 99.99</span>
+                        </div>
+                    </div>
+                    <div class="tag">sale</div>
+                    <button class="btn btn-quickview">quick view</button>
+                </div>
+                <div class="product item">
+                    <div class="product_img">
+                        <img src="images/product1.png" alt="">
+                    </div>
+                    <div class="product_desc">
+                        <div class="product_name">Iphone 7 plus</div>
+                        <div class="price">
+                            <strong class="money">$ 79.99</strong>
+                            <span class="money_compare">$ 99.99</span>
+                        </div>
+                    </div>
+                    <div class="tag">sale</div>
+                    <button class="btn btn-quickview">quick view</button>
+                </div>
+                <div class="product item">
+                    <div class="product_img">
+                        <img src="images/product1.png" alt="">
+                    </div>
+                    <div class="product_desc">
+                        <div class="product_name">Iphone 7 plus</div>
+                        <div class="price">
+                            <strong class="money">$ 79.99</strong>
+                            <span class="money_compare">$ 99.99</span>
+                        </div>
+                    </div>
+                    <div class="tag">sale</div>
+                    <button class="btn btn-quickview">quick view</button>
+                </div>
+                <div class="product item">
+                    <div class="product_img">
+                        <img src="images/product1.png" alt="">
+                    </div>
+                    <div class="product_desc">
+                        <div class="product_name">Iphone 7 plus</div>
+                        <div class="price">
+                            <strong class="money">$ 79.99</strong>
+                            <span class="money_compare">$ 99.99</span>
+                        </div>
+                    </div>
+                    <div class="tag">sale</div>
+                    <button class="btn btn-quickview">quick view</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="./main.js"></script>
+    <script>
+        // script item-slider
+        $(document).ready(function(){
+            $('.productSlider .owl-carousel').owlCarousel({
+                loop:true,
+                nav:true,
+                dots:false,
+                autoplay:true,
+                autoplayTimeOut:3000,
+                // navContainerClass: owl-nav,
+                navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:3
+                    },
+                    1000:{
+                        items:4
+                    }
+                }
+            })
 
+        });
+        
+    </script>
 </body>
 </html>
