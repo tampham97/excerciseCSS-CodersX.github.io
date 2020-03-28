@@ -1,0 +1,109 @@
+@media screen and (max-width: 992px){
+    .header__logo{
+        font-size: 2.3rem;
+        letter-spacing: initial;
+    }
+    .header__nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: initial;
+        background:var(--main-white);
+        text-align: center;
+        z-index: 10;
+        display: none;
+    }
+    .header__nav .sub-menu{
+        position: initial;
+        max-height: 0;
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+    }
+    .openSub.clicked > .sub-menu{
+        max-height: initial;
+        display: block;
+    }
+    .openSub.clicked > .sub-menu li a{
+        color: var(--main-black);
+    }
+    .openSub.clicked > .sub-menu li:hover a{
+        color: var(--main-green);
+    }
+    .sub-menu li a{
+        border-bottom: none;
+    }
+    .icon-toggle{
+        display: block;
+    }
+    .icon-close{
+        display: none;
+    }
+    .nav.active .icon-close{
+        display: block;
+    }
+    .nav.active .header__nav{
+        display: flex;
+    }
+    /* style welcome */
+    .welcome h2{
+        margin-bottom: 1rem;
+    }
+    .sec{
+        padding: 3rem 0;
+    }
+    /* style service */
+    .service{
+        border-right: none;
+    }
+    .slides{
+        height: 500px;
+    }
+    /* sliderShow */
+    .slide_content h3 {
+        font-size: 2rem;
+        margin-bottom: .7rem;
+    }
+    .line{
+        margin: 0rem auto;
+    }
+    .slide_content .desc {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width:576px){
+    .search-box{display: none;} 
+    .slides{
+        height: 400px;
+    }
+}
+@media screen and (max-width:380px){
+    .owl-prev,
+    .owl-next {
+        width: 3rem;
+        height: 3rem;
+        top: -15%;
+    }
+    .owl-prev{
+        right: 3rem;
+    }
+    .owl-next {
+        right: .5rem;
+      }
+    .nav{
+        padding: 0 1rem;
+    }
+    .slide_content h3 {
+        font-size: 1.8rem;
+        margin-bottom: .5rem;
+    }
+    .slide_content .desc {
+        font-size: 1.4rem;
+    }
+    
+}
+
