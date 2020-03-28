@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap&subset=vietnamese');
+:root{
+    --main-green: #4BB384;
+    --main-black: #282727;
+    --main-gray: #9A9A9A;
+    --main-white: #FFFFFF;
+    --main-bg-gray: #F6F6F6;
+}
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body,html{
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--main-black);
+    background: var(--main-bg-gray);
+   overflow-x: hidden;
+}
+a:hover{
+    text-decoration: none;
+    color:#079354
+}
+a{color: var(--main-green);}
+li{
+    list-style: none;
+}
+img{
+    width: 100%;
+}
+/* Global classes */
+.btn-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background: var(--main-white);
+    display: flex;
+    font-size: 1.6rem;
+    box-shadow: 0 1px #fff, inset 0 1px #c9cbcb;
+    outline: none;
+    margin: 0 .5rem;
+    cursor: pointer;
+}
+.btn-icon:hover i{
+    color: var(--main-green);
+}
+.btn-icon i{
+    margin: auto;
+    transition: all 650ms;
+}
+.btn-icon:focus,.qty_btnn:focus{
+    outline: none;
+}
+.btn-more{
+    padding: 1rem 3rem;
+    background: var(--main-green);
+    border-radius: 2.5rem;
+    color: var(--main-white);
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: all 650ms;
+}
+.btn-more:hover{
+    background: #079354 !important;
+    color: var(--main-white)  !important;
+}
+.btn-gray{
+    background: var(--main-gray) !important;
+}
+.pad{
+    padding: 5rem 0;
+}
+p{
+    font-size: 1.3rem;
+    color: var(--main-gray);
+}
