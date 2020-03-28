@@ -1,0 +1,44 @@
+/* style welcome */
+.welcome{
+    background-image: url('../images/bg-welcome.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+.welcome h2{
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    color: var(--main-white);
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+/* service style */
+.services{
+    background: var(--main-white);
+    border-bottom: 1px solid var(--main-gray);
+    margin-top: 5rem;
+}
+.service{
+    display: flex;
+    justify-content: space-between;
+    border-right: 1px solid var(--main-gray);
+    padding: 2rem 1rem;
+    /* margin: 0 1rem; */
+}
+.bor-none{
+    border-right: none;
+}
+.service_name{
+    color: var(--main-black);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 2rem;
+}
+.service_name i{
+    color: var(--main-green);
+}
+.service-ico{
+    font-size: 3rem;
+    color: var(--main-green);
+}
